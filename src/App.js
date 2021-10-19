@@ -2,7 +2,7 @@ import './App.css';
 import Home from './Pages/Home/Home/Home'
 import NotFound from './Pages/NotFound/NotFound'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Booking from './Pages/Booking/Booking/Booking';
+import ServiceDetails from './Pages/Booking/ServiceDetails/ServiceDetails';
 import Login from './Pages/Login/Login/Login';
 import Header from './Pages/Shared/Header/Header';
 import AuthProvider from './contexts/AuthProvider';
@@ -10,6 +10,7 @@ import PrivateRoute from './Pages/Login/Login/PrivateRoute/PrivateRoute';
 import Doctor from './Pages/Doctor/Doctor';
 import Services from './Pages/Home/Services/Services';
 import Footer from './Pages/Footer/Footer';
+import AboutUs from './Pages/AboutUs/AboutUs';
 
 
 
@@ -32,14 +33,16 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <PrivateRoute path="/doctor">
+            <PrivateRoute exact path="/doctor">
               <Doctor></Doctor>
             </PrivateRoute>
 
+            <PrivateRoute exact path="/doctor/:details">
+              <ServiceDetails></ServiceDetails>
+            </PrivateRoute>
 
-
-            <PrivateRoute path="/booking/:details">
-              <Booking></Booking>
+            <PrivateRoute exact path="/about-us">
+              <AboutUs></AboutUs>
             </PrivateRoute>
 
             <Route path="*">

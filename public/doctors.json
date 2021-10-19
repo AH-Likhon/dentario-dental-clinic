@@ -1,73 +1,44 @@
 [
     {
         "id": 1,
-        "trainer": "Hinata Hyuga",
-        "trainerImg": "https://eduma.thimpress.com/demo-languages-school/wp-content/uploads/sites/26/2015/11/team-3-200x200.jpg"
-       
+        "name": "Dr. Eleonore Grey",
+        "position": "Senior Doctor",
+        "doctorImg": "http://dentario.themerex.net/wp-content/uploads/2016/01/team_3-182x182.jpg",
+        "aboutDoctor": "Types of bridges may vary, depending upon how they are fabricated."
     },
     {
         "id": 2,
-        "trainer": "Keny White",
-        "trainerImg": "https://eduma.thimpress.com/demo-languages-school/wp-content/uploads/sites/26/2015/11/team-5-200x200.jpg"
-       
+        "name": "Dr. Joseph Phillips",
+        "position": "Senior Doctor",
+        "doctorImg": "http://dentario.themerex.net/wp-content/uploads/2016/01/team_2-182x182.jpg",
+        "aboutDoctor": "Types of bridges may vary, depending upon how they are fabricated."
     },
     {
         "id": 3,
-        "trainer": "Hinata Hyuga",
-        "trainerImg": "https://eduma.thimpress.com/demo-languages-school/wp-content/uploads/sites/26/2015/11/team-3-200x200.jpg"
-       
+        "name": "Dr. Lisa Casey",
+        "position": "Junior Doctor",
+        "doctorImg": "http://dentario.themerex.net/wp-content/uploads/2016/01/team_1-182x182.jpg",
+        "aboutDoctor": "Types of bridges may vary, depending upon how they are fabricated."
     },
     {
         "id": 4,
-        "trainer": "Anthony",
-        "trainerImg": "https://eduma.thimpress.com/demo-languages-school/wp-content/uploads/sites/26/2015/11/team-2-200x200.jpg"
-       
+        "name": "Dr. Nick Kelly",
+        "position": "Senior Doctor",
+        "doctorImg": "http://dentario.themerex.net/wp-content/uploads/2016/01/team_4-182x182.jpg",
+        "aboutDoctor": "Types of bridges may vary, depending upon how they are fabricated."
     },
     {
         "id": 5,
-        "trainer": "John Doe",
-        "trainerImg": "https://lmstheme.wpengine.com/wp-content/uploads/2014/05/teacher3.jpg"
+        "name": "Dr.Lamar Baker",
+        "position": "Surgeon",
+        "doctorImg": "https://mediclinic.wpengine.com/wp-content/uploads/2016/05/doctor-1.jpg",
+        "aboutDoctor": "Types of bridges may vary, depending upon how they are fabricated."
     },
     {
         "id": 6,
-        "trainer": "Hinata Hyuga",
-        "trainerImg": "https://eduma.thimpress.com/demo-languages-school/wp-content/uploads/sites/26/2015/11/team-3-200x200.jpg"
-      
-    },
-    {
-        "id": 7,
-        "trainer": "Anthony",
-        "trainerImg": "https://eduma.thimpress.com/demo-languages-school/wp-content/uploads/sites/26/2015/11/team-2-200x200.jpg"
-      
-    },
-    {
-        "id": 8,
-        "trainer": "John Doe",
-        "trainerImg": "https://lmstheme.wpengine.com/wp-content/uploads/2014/05/teacher3.jpg"
-        
-    },
-    {
-        "id": 9,
-        "trainer": "Young Hoo",
-        "trainerImg": "https://lmstheme.wpengine.com/wp-content/uploads/2014/05/teacher1.jpg"
-       
-    },
-    {
-        "id": 10,
-        "trainer": "Hinata Hyuga",
-        
-        "trainerImg": "https://eduma.thimpress.com/demo-languages-school/wp-content/uploads/sites/26/2015/11/team-3-200x200.jpg"
-        
-    },
-    {
-        "id": 11,
-        "trainer": "Keny White",
-        "trainerImg": "https://eduma.thimpress.com/demo-languages-school/wp-content/uploads/sites/26/2015/11/team-5-200x200.jpg"
-    },
-    {
-        "id": 12,
-        "trainer": "Keny White",
-        "trainerImg": "https://eduma.thimpress.com/demo-languages-school/wp-content/uploads/sites/26/2015/11/team-5-200x200.jpg"
-        
+        "name": "Dr.Stuart Marshall",
+        "position": "General Pediatrics",
+        "doctorImg": "https://mediclinic.wpengine.com/wp-content/uploads/2016/05/doctor-3.jpg",
+        "aboutDoctor": "Types of bridges may vary, depending upon how they are fabricated."
     }
 ]

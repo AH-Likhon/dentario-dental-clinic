@@ -17,7 +17,7 @@ const Service = ({ service }) => {
                             <Card.Title> {name} </Card.Title>
                             <Card.Text> {details} </Card.Text>
 
-                            <Link to={`/booking/${details}`}>
+                            <Link to={`/doctor/${details}`}>
                                 <Button className="btn bg-black text-white" >Details About</Button>
                             </Link>
 

@@ -1,9 +1,10 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyCCVgV0wreM_I9Pm1IiEx3iKsI4RQRqftI",
-  authDomain: "medicare-1bda7.firebaseapp.com",
-  projectId: "medicare-1bda7",
-  storageBucket: "medicare-1bda7.appspot.com",
-  messagingSenderId: "379311445864",
-  appId: "1:379311445864:web:993ad9b10b4fb71b1468dd"
-  };
-  export default firebaseConfig;
+  apiKey: "AIzaSyAtYxLlF40mWG-Tcf9evxiEA-64QyHJWOM",
+  authDomain: "dentario-dental-clinic.firebaseapp.com",
+  projectId: "dentario-dental-clinic",
+  storageBucket: "dentario-dental-clinic.appspot.com",
+  messagingSenderId: "690172344451",
+  appId: "1:690172344451:web:0d98adcd1ab8f14478c3b6"
+};
+
+export default firebaseConfig;

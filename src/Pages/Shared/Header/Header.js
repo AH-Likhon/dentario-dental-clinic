@@ -10,7 +10,7 @@ const Header = () => {
   const { user, logOut } = useAuth()
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" sticky="top" bg="dark" variant="dark">
+      <Navbar collapseOnSelect expand="lg" sticky="top" bg="secondary" variant="dark">
         <Container>
           <Navbar.Brand href="#home">
             <img src={logo} alt="" />
@@ -20,12 +20,13 @@ const Header = () => {
             <Nav.Link className="text-light" as={HashLink} to="/home">Home</Nav.Link>
             <Nav.Link className="text-light" as={HashLink} to="/services">Services</Nav.Link>
             <Nav.Link className="text-light" as={HashLink} to="/doctor">Doctor</Nav.Link>
+            <Nav.Link className="text-light" as={HashLink} to="/about-us">About Us</Nav.Link>
 
             <Navbar.Text>
-              <a className="text-decoration-none text-muted me-2" href="#login">{user?.displayName}</a>
+              <a className="text-decoration-none text-info me-2" href="#login">{user?.displayName}</a>
             </Navbar.Text>
             {user?.email ?
-              <Button onClick={logOut} variant="light">Log Out</Button> :
+              <Button onClick={logOut} variant="dark">Log Out</Button> :
               <Nav.Link className="text-light" as={Link} to="/login">Login</Nav.Link>}
           </Navbar.Collapse>
         </Container>
