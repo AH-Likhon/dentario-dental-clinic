@@ -9,10 +9,8 @@ import Services from '../Services/Services';
 const Home = () => {
     return (
         <div id="home" >
-           <Banner></Banner>
+            <Banner></Banner>
             <Services></Services>
-            <Footer></Footer>
-           
         </div>
     );
 };

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './Pages/Home/Home/Home'
 import NotFound from './Pages/NotFound/NotFound'
@@ -10,6 +9,7 @@ import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './Pages/Login/Login/PrivateRoute/PrivateRoute';
 import Doctor from './Pages/Doctor/Doctor';
 import Services from './Pages/Home/Services/Services';
+import Footer from './Pages/Footer/Footer';
 
 
 
@@ -47,6 +47,8 @@ function App() {
             </Route>
           </Switch>
         </Router>
+
+        <Footer></Footer>
       </AuthProvider>
     </div>
   );

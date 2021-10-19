@@ -6,7 +6,7 @@ import useFirebase from "../../../hooks/useFirebase";
 
 const Login = () => {
   const {
-   
+
     handleUserRegister,
     handleUserLogin,
   } = useFirebase();
@@ -14,16 +14,16 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const {signInUsingGoogle}=useAuth();
-  const location=useLocation();
-  const history=useHistory();
-  const redirect_url=location.state?.from || '/home';
+  const { signInUsingGoogle } = useAuth();
+  const location = useLocation();
+  const history = useHistory();
+  const redirect_url = location.state?.from || '/home';
   //console.log('Came from ',location.state?.from);
 
-  const handleGoogleLogin=()=>{
-      signInUsingGoogle()
-      .then(result=>{
-          history.push(redirect_url);
+  const handleGoogleLogin = () => {
+    signInUsingGoogle()
+      .then(result => {
+        history.push(redirect_url);
       })
   }
 
@@ -45,7 +45,7 @@ const Login = () => {
   };
 
   return (
-    <div className="div d-flex justify-content-center align-items-center">
+    <div className="div d-flex justify-content-center align-items-center py-5">
       <div className="row ">
         <div className="col-md-6">
           <div>
@@ -81,9 +81,9 @@ const Login = () => {
                 onClick={handleGoogleLogin}
                 className="btn btn-warning m-2"
               >
-                google sign in
+                Google SignIn
               </button>
-            
+
             </div>
           </div>
         </div>
@@ -91,7 +91,7 @@ const Login = () => {
           <div className="right-side-image">
             <img
               className="w-100"
-              src="https://i.ibb.co/MSBbLcd/access-control-system-abstract-concept-illustration-security-system-authorize-entry-login-credential.jpg"
+              src="https://www.narchar.com/assets/images/login-img.png"
               alt=""
             />
           </div>
