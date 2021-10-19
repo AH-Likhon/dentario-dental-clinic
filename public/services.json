@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "name": "Primary Health Care",
+       
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/kHpcBCq/download.jpg",
+        "details":"Primary healthcare refers to a broad range of health services provided by medical professionals in the community. ... Primary healthcare is the provision of health services, including diagnosis and treatment of a health condition, and support in managing long-term healthcare, including chronic conditions like diabetes."
+    },
+    {
+        "id": 2,
+        "name": "Laboratory Analysis",
+       
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/L8PJtxp/download-1.jpg",
+        "details":"Laboratory analysis means a test performed by a labo- ratory on body fluid, tissue, or excretion for the purpose of determining the presence, absence, or concentration of various substances in the human body."
+    },
+    {
+        "id": 3,
+        "name": "Neonatal Unit",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/sVHjQFQ/maxresdefault.jpg",
+        "details":"Dental surgery is any of a number of medical procedures that involve artificially modifying dentition; in other words, surgery of the teeth, gums and jaw bones."
+    },
+    {
+        "id": 4,
+        "name": "Gyneological Unit",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/34h0C2B/images.jpg",
+        "details" : "Gynecologists give reproductive and sexual health services that include pelvic exams, Pap tests, cancer screenings, and testing and treatment for vaginal infections. They diagnose and treat reproductive system disorders such as endometriosis, infertility, ovarian cysts, and pelvic pain"
+    },
+    {
+        "id": 5,
+        "name": "Cardiac Unit",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/chn3B4b/download-2.jpg",
+        "details":"A cardiac care unit (CCU) is a specialized hospital ward designed to treat people with serious or acute heart problems. People who undergo heart surgery also are placed in the CCU as they recover."
+    },
+    {
+        "id": 6,
+        "name": "Dental Surgery",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/5vY9mKn/download-3.jpg",
+        "details":"Dental surgery is any of a number of medical procedures that involve artificially modifying dentition; in other words, surgery of the teeth, gums and jaw bones."
+    }
+]

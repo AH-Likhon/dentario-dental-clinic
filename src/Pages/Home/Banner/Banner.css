@@ -1,0 +1,18 @@
+.banner{
+    background-image: url("https://i.ibb.co/QmjcLBL/hero-03.jpg");
+    height: 140vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+.banner-title{
+    color: Black;
+    font-weight: 900;
+    font-size: 48px;
+}
+.sub-title{
+    color: black;
+    font-size: 38px;
+    margin-top: 10px;
+}
