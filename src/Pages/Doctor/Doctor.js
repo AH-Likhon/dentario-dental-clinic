@@ -24,6 +24,7 @@ const Doctor = () => {
         />
       </div>
       <h1 className="Prevent-title">Our Doctors</h1>
+      <hr className="w-25 mx-auto mt-0" />
 
 
       <div className="row">

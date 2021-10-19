@@ -4,6 +4,9 @@ import img3 from '../../images/img-3.jpg'
 const AboutUs = () => {
     return (
         <div class="container mb-5">
+            <h2 className="text-dark mt-5">About Our Clinic</h2>
+            <p className="text-muted mb-0">Our goals and values</p>
+            <hr className="w-25 mx-auto mt-0" />
             <div class="row">
                 <div class="col-sm-12 col-md-6">
                     <img src={img3} alt="" />
