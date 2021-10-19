@@ -1,18 +1,20 @@
 .banner{
-    background-image: url("https://i.ibb.co/QmjcLBL/hero-03.jpg");
-    height: 140vh;
+    background-image: url("../../../images/banner/doctor.jpg");
+    height: 78vh;
     width: 100%;
+    margin-top: 0px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
     background-blend-mode: overlay;
 }
 .banner-title{
     color: Black;
     font-weight: 900;
     font-size: 48px;
+    margin-top: 0px;
 }
 .sub-title{
     color: black;
-    font-size: 38px;
-    margin-top: 10px;
+    font-size: 20px;
+    /* margin-top: 10px; */
 }
