@@ -1,10 +1,10 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyAtYxLlF40mWG-Tcf9evxiEA-64QyHJWOM",
-  authDomain: "dentario-dental-clinic.firebaseapp.com",
-  projectId: "dentario-dental-clinic",
-  storageBucket: "dentario-dental-clinic.appspot.com",
-  messagingSenderId: "690172344451",
-  appId: "1:690172344451:web:0d98adcd1ab8f14478c3b6"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
 };
 
 export default firebaseConfig;

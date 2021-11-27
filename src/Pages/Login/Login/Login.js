@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useHistory, useLocation } from "react-router";
+import { NavLink } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import useFirebase from "../../../hooks/useFirebase";
 
@@ -9,73 +10,84 @@ const Login = () => {
 
     handleUserRegister,
     handleUserLogin,
-  } = useFirebase();
+    user,
+    isLoading,
+    authError,
+    signInUsingGoogle
+  } = useAuth();
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
+  const [loginData, setLoginData] = useState({});
 
-  const { signInUsingGoogle } = useAuth();
+  // const { signInUsingGoogle } = useAuth();
   const location = useLocation();
   const history = useHistory();
-  const redirect_url = location.state?.from || '/home';
+  // const redirect_url = location.state?.from || '/home';
   //console.log('Came from ',location.state?.from);
 
   const handleGoogleLogin = () => {
-    signInUsingGoogle()
-      .then(result => {
-        history.push(redirect_url);
-      })
+    signInUsingGoogle(location, history)
+
   }
 
-  const hanldeEmail = (e) => {
-    setEmail(e.target.value);
-  };
-  const hanldePassword = (e) => {
-    setPassword(e.target.value);
-  };
+  const handleOnChange = e => {
+    const field = e.target.name;
+    const value = e.target.value;
+    const newLoginData = { ...loginData };
+    newLoginData[field] = value;
+    setLoginData(newLoginData);
+  }
 
   // console.log(email, password);
 
-  const handleRegister = () => {
-    handleUserRegister(email, password);
-  };
+  // const handleRegister = () => {
+  //   handleUserRegister(email, password);
+  // };
 
-  const handleLogin = () => {
-    handleUserLogin(email, password);
-  };
+  const handleLogin = e => {
+    alert('Successfully Login');
+    handleUserLogin(loginData.email, loginData.password, location, history);
+
+    e.preventDefault();
+  }
 
   return (
     <div className="div d-flex justify-content-center align-items-center py-5">
       <div className="row ">
         <div className="col-md-6">
           <div>
-            <div className="form-input mt-5">
+            <form onSubmit={handleLogin} className="form-input mt-5">
               <input
-                onChange={hanldeEmail}
+                onChange={handleOnChange}
                 className="mt-2 p-2"
                 type="email"
+                name="email"
                 placeholder="Email"
               />
               <br />
               <input
-                onChange={hanldePassword}
+                onChange={handleOnChange}
                 className="mt-2 p-2"
                 type="password"
+                name="password"
                 placeholder="Password(6Character)"
               />
               <br />
               <div className="login-regiater-btn mt-4">
-                <button
-                  onClick={handleRegister}
-                  className="btn btn-primary me-1"
-                >
-                  Register
-                </button>
-                <button onClick={handleLogin} className="btn btn-success ms-1">
+                <NavLink style={{ textDecoration: 'none', width: '75%', m: 1 }} to="/register">
+                  <button
+
+                    className="btn btn-primary me-1"
+                  >
+                    Register
+                  </button>
+                </NavLink>
+                <button type='submit' className="btn btn-success ms-1">
                   Login
                 </button>
               </div>
-            </div>
+            </form>
             <div className="login-btn mt-4">
               <button
                 onClick={handleGoogleLogin}

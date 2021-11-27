@@ -11,6 +11,7 @@ import Doctor from './Pages/Doctor/Doctor';
 import Services from './Pages/Home/Services/Services';
 import Footer from './Pages/Footer/Footer';
 import AboutUs from './Pages/AboutUs/AboutUs';
+import Register from './Pages/Login/Register/Register';
 
 
 
@@ -32,6 +33,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Login></Login>
+            </Route>
+            <Route path="/register">
+              <Register></Register>
             </Route>
             <PrivateRoute exact path="/doctor">
               <Doctor></Doctor>
