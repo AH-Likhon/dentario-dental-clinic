@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { NavLink, useLocation, useHistory } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 const Register = () => {
     const [loginData, setLoginData] = useState({});
     const history = useHistory();
 
-    const { user, handleUserRegister, isLoading, authError } = useAuth();
+    const { handleUserRegister } = useAuth();
 
     const handleOnChange = e => {
         const field = e.target.name;
@@ -82,15 +82,6 @@ const Register = () => {
                                 </NavLink>
                             </div>
                         </form>
-                        {/* <div className="login-btn mt-4">
-                            <button
-                                onClick={handleGoogleLogin}
-                                className="btn btn-warning m-2"
-                            >
-                                Google SignIn
-                            </button>
-
-                        </div> */}
                     </div>
                 </div>
                 <div className="col-md-6">

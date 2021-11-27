@@ -2,29 +2,17 @@ import React, { useState } from "react";
 import { useHistory, useLocation } from "react-router";
 import { NavLink } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
-import useFirebase from "../../../hooks/useFirebase";
-
 
 const Login = () => {
   const {
-
-    handleUserRegister,
     handleUserLogin,
-    user,
-    isLoading,
-    authError,
     signInUsingGoogle
   } = useAuth();
 
-  // const [email, setEmail] = useState("");
-  // const [password, setPassword] = useState("");
   const [loginData, setLoginData] = useState({});
 
-  // const { signInUsingGoogle } = useAuth();
   const location = useLocation();
   const history = useHistory();
-  // const redirect_url = location.state?.from || '/home';
-  //console.log('Came from ',location.state?.from);
 
   const handleGoogleLogin = () => {
     signInUsingGoogle(location, history)
@@ -39,11 +27,6 @@ const Login = () => {
     setLoginData(newLoginData);
   }
 
-  // console.log(email, password);
-
-  // const handleRegister = () => {
-  //   handleUserRegister(email, password);
-  // };
 
   const handleLogin = e => {
     alert('Successfully Login');
